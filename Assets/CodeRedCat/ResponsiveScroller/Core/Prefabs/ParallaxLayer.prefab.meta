@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 280eb57cbef489b4c94c43c3566da69d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 301088
+  packageName: Responsive Parallax Scroller Tool
+  packageVersion: 1.0
+  assetPath: Assets/CodeRedCat/ResponsiveScroller/Core/Prefabs/ParallaxLayer.prefab
+  uploadId: 708736

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ddb6d646f5515c54da8755409d1c687c
+AssemblyDefinitionReferenceImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 301088
+  packageName: Responsive Parallax Scroller Tool
+  packageVersion: 1.0
+  assetPath: Assets/CodeRedCat/ResponsiveScroller/Core/AnchoredScroller.Core.asmref
+  uploadId: 708736

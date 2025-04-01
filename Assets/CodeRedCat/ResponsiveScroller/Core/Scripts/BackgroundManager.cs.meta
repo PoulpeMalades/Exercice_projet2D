@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b646980344fe2714f94820bae92ceb91
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: -500
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 301088
+  packageName: Responsive Parallax Scroller Tool
+  packageVersion: 1.0
+  assetPath: Assets/CodeRedCat/ResponsiveScroller/Core/Scripts/BackgroundManager.cs
+  uploadId: 708736
