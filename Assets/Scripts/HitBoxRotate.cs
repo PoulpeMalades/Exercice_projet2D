@@ -15,13 +15,21 @@ public class HitBoxRotate : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
 
         
-        //float x = transform.position.x * flipX ? -1 : 1;
+        float x = transform.position.x * flipX ? -1 : 1;
+        if (horizontal>0)
+        {
+            transform.localScale = new Vector3(-2, 2, 1);
+        }
+        else if (horizontal < 0)
+        {
+            transform.localScale = new Vector3(2, 2, 1);
+        }
         
             
-        //if (horizontal > 0)
-            //_vector2AttackPosition.flipX = false;
-        //else if (horizontal < 0)
-           // flipX = true;
+        if (horizontal > 0)
+            _vector2AttackPosition.flipX = false;
+        else if (horizontal < 0)
+            flipX = true;
     }
 
     
