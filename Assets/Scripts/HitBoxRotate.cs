@@ -5,6 +5,8 @@ using UnityEngine.Splines;
 public class HitBoxRotate : MonoBehaviour
 {
     private float _vector2AttackPostion;
+    bool attack = Input.GetButton("Fire1");
+    bool attack2 = Input.GetButton("Fire2");
     private void Start()
     { 
         //_vector2AttackPosition = ;
@@ -13,23 +15,16 @@ public class HitBoxRotate : MonoBehaviour
     private void Update()
     {
         float horizontal = Input.GetAxis("Horizontal");
-
         
-        float x = transform.position.x * flipX ? -1 : 1;
         if (horizontal>0)
         {
-            transform.localScale = new Vector3(-2, 2, 1);
+            transform.localPosition = new Vector2(0.8f, 0.7f);
         }
         else if (horizontal < 0)
         {
-            transform.localScale = new Vector3(2, 2, 1);
+            transform.localPosition = new Vector2(-0.8f, 0.7f);
         }
         
-            
-        if (horizontal > 0)
-            _vector2AttackPosition.flipX = false;
-        else if (horizontal < 0)
-            flipX = true;
     }
 
     
