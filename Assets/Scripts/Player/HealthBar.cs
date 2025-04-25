@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections;
+using System.Collections.Generic;
 
 public class HealthBar : MonoBehaviour
 {
@@ -11,6 +13,12 @@ public class HealthBar : MonoBehaviour
     
     public string _newGameLevel;
     
+    [Header("IFrames")]
+    [SerializeField]private float iFrameTime;
+    [SerializeField]private int numberOffFlashes;
+    private SpriteRenderer _spriteRenderer;
+        
+    
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,12 +27,14 @@ public class HealthBar : MonoBehaviour
             TakeDamage(5);
             //_rigidBody.AddForce(Vector3.left * 2f, ForceMode2D.Impulse);
             _animator.SetTrigger("Hit");
+            StartCoroutine(Invulnerability());
         }
     }
     void Start()
     {
         _rigidBody = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -70,5 +80,18 @@ public class HealthBar : MonoBehaviour
     public void Destroy()
     {
         SceneManager.LoadScene("GameOver");
+    }
+
+    private IEnumerator Invulnerability()
+    {
+        Physics2D.IgnoreLayerCollision(8, 7, true);
+        for (int i = 0; i < numberOffFlashes; i++)
+        {
+            _spriteRenderer.color = new Color(1,0,0,0.5f);
+            yield return new WaitForSeconds(iFrameTime/(numberOffFlashes*2));
+            _spriteRenderer.color= new Color(1,1,1);
+            yield return new WaitForSeconds(iFrameTime/(numberOffFlashes*2));
+        }
+        Physics2D.IgnoreLayerCollision(8, 7, false);
     }
 }

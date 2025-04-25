@@ -14,6 +14,14 @@ public class EnnemyHealth : MonoBehaviour, IDamageable
         _animator = GetComponent<Animator>();
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Sword")
+        {
+            Damage(1);
+        }
+    }
+
     public void Damage(float damageAmount)
     {
         currentHealth -= damageAmount;
