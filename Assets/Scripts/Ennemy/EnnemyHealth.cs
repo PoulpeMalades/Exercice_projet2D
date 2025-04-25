@@ -17,6 +17,7 @@ public class EnnemyHealth : MonoBehaviour, IDamageable
     public void Damage(float damageAmount)
     {
         currentHealth -= damageAmount;
+        _animator.SetTrigger("Damage");
 
         if (currentHealth <= 0)
         {
@@ -26,7 +27,7 @@ public class EnnemyHealth : MonoBehaviour, IDamageable
 
     private void Die()
     {
-        _animator.SetTrigger("Death");
-        Destroy(gameObject, 1.5f);
+        _animator.SetBool("Death",true);
+        Destroy(gameObject, 1f);
     }
 }

@@ -23,7 +23,7 @@ public class PlayerController1 : MonoBehaviour
     
     private float _attackTimer;
     private float _attack2Timer;
-    private float Timer = 0f;
+    //private float Timer = 0f;
     
 
     
@@ -49,11 +49,6 @@ public class PlayerController1 : MonoBehaviour
         if (_attackTimer >= AttackCooldown)
         {
             transform.Translate(horizontal * Time.deltaTime * MoveSpeed, 1, 1);
-        }
-
-        if (isAttacking)
-        {
-            _animator.SetBool("attaque", true);
         }
         
         Vector2 movement = new Vector2(Input.GetAxis("Horizontal"), 0);

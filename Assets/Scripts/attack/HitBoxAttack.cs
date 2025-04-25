@@ -1,7 +1,7 @@
-// using UnityEngine;
-//
-// public class HitBoxAttack : MonoBehaviour
-// {
+using UnityEngine;
+
+public class HitBoxAttack : MonoBehaviour
+ {
 //     private int damage = 10;
 //     private void OnTriggerEnter2D(Collider2D collider)
 //     {
@@ -11,4 +11,4 @@
 //             health.Damage(damage);
 //         }
 //     }
-// }
+ }

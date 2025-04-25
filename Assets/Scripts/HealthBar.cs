@@ -16,8 +16,8 @@ public class HealthBar : MonoBehaviour
     {
         if (collision.tag == "Ennemy")
         {
-            TakeDamage(10);
-            _rigidBody.AddForce(Vector3.left * 5f, ForceMode2D.Impulse);
+            TakeDamage(5);
+            //_rigidBody.AddForce(Vector3.left * 2f, ForceMode2D.Impulse);
             _animator.SetTrigger("Hit");
         }
     }
@@ -32,8 +32,8 @@ public class HealthBar : MonoBehaviour
         if (healthAmount <= 0)
         {
             _animator.SetTrigger("Death");
-            Destroy(gameObject,0.7f);
-            SceneManager.LoadScene("GameOver");
+            Destroy(gameObject,2f);
+            Invoke("Destroy", 0.7f);
         }
 
         if (Input.GetKeyDown(KeyCode.H))
@@ -45,9 +45,8 @@ public class HealthBar : MonoBehaviour
         {
             Heal(20);
         }
-        if (_rigidBody.position.y <= -20)
+        if (_rigidBody.position.y <= -10)
         {
-            _rigidBody.position = new Vector2(-145, 43);
             TakeDamage(20);
         }
         
@@ -66,5 +65,10 @@ public class HealthBar : MonoBehaviour
         healthAmount = Mathf.Clamp(healthAmount, 0, 100);
         
         healthBar.fillAmount = healthAmount / 100f;
+    }
+
+    public void Destroy()
+    {
+        SceneManager.LoadScene("GameOver");
     }
 }

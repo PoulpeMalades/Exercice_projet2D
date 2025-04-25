@@ -334,7 +334,6 @@ GameObject:
   - component: {fileID: 8481524236454275234}
   - component: {fileID: 9167016766372997432}
   - component: {fileID: 5746032236787457165}
-  - component: {fileID: 7212268166049846716}
   m_Layer: 0
   m_Name: HeroKnight_0 1
   m_TagString: Untagged
@@ -430,7 +429,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 10
   JumpForce: 800
-  JumpCooldown: 0
+  Attack2Cooldown: 2
+  AttackCooldown: 1
   maxHealth: 100
   currentHealth: 100
   healthBar: {fileID: 0}
@@ -534,18 +534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   healthAmount: 100
---- !u!114 &7212268166049846716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5645567190820627669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 117ffafa89c001a4cbede04b34e0724c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  _newGameLevel: 
 --- !u!1 &8200189146545986197
 GameObject:
   m_ObjectHideFlags: 0

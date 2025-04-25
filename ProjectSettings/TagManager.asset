@@ -7,11 +7,12 @@ TagManager:
   - Ennemy
   - Attack
   - Sword
+  - HitBox
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Parralax
   - Water
   - UI
   - 
@@ -41,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: parralax
+    uniqueID: 1364934265
+    locked: 0
   - name: back
     uniqueID: 1302959517
     locked: 0

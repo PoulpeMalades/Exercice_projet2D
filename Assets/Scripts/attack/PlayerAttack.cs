@@ -11,6 +11,8 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private float damageAmount = 1f;
     [SerializeField] private float timeBtwAttacks = 1f;
     
+    
+    
     private RaycastHit2D [] hits;
 
     private Animator _animator;
@@ -23,6 +25,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
+        float horizontal = Input.GetAxis("Horizontal");
         bool isAttacking = Input.GetButton("Fire1");
         
         
@@ -40,6 +43,7 @@ public class PlayerAttack : MonoBehaviour
         }
         
         attackTimerCounter += Time.deltaTime;
+        
     }
 
     private void Attack()
@@ -61,4 +65,6 @@ public class PlayerAttack : MonoBehaviour
     {
         Gizmos.DrawWireSphere(attackTransform.position, attackRange);
     }
+    
+    
 }

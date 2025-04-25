@@ -12,9 +12,4 @@ public class GameOver : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
-
-    public void Setup(string maxPlatform)
-    {
-        gameObject.SetActive(true);
-    }
 }

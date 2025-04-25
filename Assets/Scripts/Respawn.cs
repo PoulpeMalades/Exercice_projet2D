@@ -1,19 +1,23 @@
+using System;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class Respawn : MonoBehaviour
 {
-    private Rigidbody2D _rigidBody;
-    void Start()
-    {
-        _rigidBody = GetComponent<Rigidbody2D>();
-    }
+    private Rigidbody2D rb;
 
-   
-    void Update()
+    private void Start()
+         {
+             rb = GetComponent<Rigidbody2D>();
+         }
+
+    private void Update()
     {
-        if (_rigidBody.position.y <= -8)
+        if (rb.position.y <= -10)
         {
-            _rigidBody.position = new Vector2(-123.6f, 17.2f);
+            rb.position = new Vector2(-128.2f,18.34f);
+            rb.linearVelocity = Vector2.zero;
         }
     }
 }
