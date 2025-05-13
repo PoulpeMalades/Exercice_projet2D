@@ -8,6 +8,7 @@ TagManager:
   - Attack
   - Sword
   - HitBox
+  - NextLevel
   layers:
   - Default
   - TransparentFX
