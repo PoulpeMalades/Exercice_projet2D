@@ -1,20 +1,23 @@
-# 🎮 [Projet2D]
+# 🎮 [Project2D]
 
-Premier jeu développé avec **Unity**.  
-Ce projet est destiné à apprendre les bases de Unity.
+A game developed with **Unity**.  
+This project aims to understand Unity.
 
 ---
 
-## 📦 Informations techniques
+## 📦 Technical Information
 
-- **Moteur** : Unity 6000.0.41f1
-- **Langage** : C#
-- **Plateformes ciblées** : PC
-  
+- **Engine**: Unity 6000.0.41f1
+- **Language**: C#
+- **Target Platforms**: PC
+- **Version Control**: Git
+
 ---
 
-## 🚀 Fonctionnalités principales
+## 🚀 Main Features
 
-- Mouvement du personnage fluide
-- ennemies reperant le joueur
-- menus
+- 🎯 [Smooth character movement]
+- 🧠 [Basic enemy AI]
+- 🎨 user interface
+
+---
