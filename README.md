@@ -1,4 +1,4 @@
-# 🎮 [NomDuProjetUnity]
+# 🎮 [Projet2D]
 
 Premier jeu développé avec **Unity**.  
 Ce projet est destiné à apprendre les bases de Unity.
