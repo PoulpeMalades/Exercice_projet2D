@@ -19,5 +19,6 @@ This project aims to understand Unity.
 -  [Smooth character movement]
 -  [Basic enemy AI]
 -  [user interface]
+-  [dodge]
 
 ---
