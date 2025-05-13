@@ -16,8 +16,8 @@ This project aims to understand Unity.
 
 ## 🚀 Main Features
 
-- 🎯 [Smooth character movement]
-- 🧠 [Basic enemy AI]
-- 🎨 user interface
+-  [Smooth character movement]
+-  [Basic enemy AI]
+-  [user interface]
 
 ---
