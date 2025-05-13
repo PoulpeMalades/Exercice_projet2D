@@ -1,31 +1,20 @@
 # 🎮 [NomDuProjetUnity]
 
-Un jeu/une application développé(e) avec **Unity**.  
-Ce projet est destiné à [objectif du projet : ex. "créer un jeu de plateforme en 2D avec une ambiance rétro"].
+Premier jeu développé avec **Unity**.  
+Ce projet est destiné à apprendre les bases de Unity.
 
 ---
 
 ## 📦 Informations techniques
 
-- **Moteur** : Unity [ex. 2022.3.4f1]
+- **Moteur** : Unity 6000.0.41f1
 - **Langage** : C#
-- **Plateformes ciblées** : [PC / Android / WebGL / etc.]
-- **Système de version** : Git [et Git LFS si vous avez de gros fichiers]
-
+- **Plateformes ciblées** : PC
+  
 ---
 
 ## 🚀 Fonctionnalités principales
 
-- 🎯 [Mouvement du personnage fluide]
-- 🧠 [IA de base pour les ennemis]
-- 💬 [Système de dialogue interactif]
-- 🌍 [Système de sauvegarde et chargement]
-- 🎨 [Interface utilisateur personnalisée]
-
----
-
-## 🛠️ Installation & Lancement
-
-1. **Cloner le dépôt** :
-   ```bash
-   git clone https://github.com/[votre-utilisateur]/[NomDuProjetUnity].git
+- Mouvement du personnage fluide
+- ennemies reperant le joueur
+- menus
